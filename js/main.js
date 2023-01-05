@@ -14,3 +14,10 @@ serachInputEl.addEventListener("blur", function () {
   searchEl.classList.remove("focused");
   serachInputEl.setAttribute("placeholder", "");
 });
+
+const menuEl = document.querySelector(".item__name");
+const menuInnerEl = document.querySelector(".item__contents");
+
+menuEl.addEventListener("mouseover", function () {
+  menuInnerEl.slideDown();
+});
