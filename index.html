@@ -59,6 +59,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="./js/main.js"></script>
   </head>
 
@@ -431,6 +438,91 @@
           alt="STARTBUCKS TURMERIC LATTE"
           class="cup3 image fade-in"
         />
+      </div>
+    </section>
+
+    <section class="notice">
+      <div class="notice-line">
+        <div class="bg-left"></div>
+        <div class="bg-right"></div>
+
+        <div class="inner">
+          <div class="inner__left">
+            <h2>공지사항</h2>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    시스템 개선 및 서비스 점검 안내</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)"
+                    >스타벅스 e카드 교환권 등록 가능 금액 안내</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)"
+                    >제26기 정기주주총회 권리행사 기준일 공고</a
+                  >
+                </div>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="notice-line__more">
+              <div class="material-icons">add_circle</div>
+            </a>
+          </div>
+
+          <div class="inner__right">
+            <h2>스타벅스 프로모션</h2>
+            <div class="toggle-promotion">
+              <div class="material-icons">download</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="promotion">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./images//promotion_slide1.jpg"
+                alt="1만원당 별1개를 즉시 추가"
+              />
+              <a href="javascript:void(0)" class="btn btn--black">
+                자세히 보기</a
+              >
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images//promotion_slide2.jpg"
+                alt="23년, 스타벅스에서 행운가득한 신년을 맞이하세요!"
+              />
+              <a href="javascript:void(0)" class="btn btn--black">
+                자세히 보기</a
+              >
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images//promotion_slide3.jpg"
+                alt="스타벅스 리저브 뉴이어 원두&커피"
+              />
+              <a href="javascript:void(0)" class="btn btn--black">
+                자세히 보기</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="swiper-autoplay"></div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-prev">
+          <div class="material-icons">arrow_back</div>
+        </div>
+        <div class="swiper-next">
+          <div class="material-icons">arrow_forward</div>
+        </div>
       </div>
     </section>
   </body>
