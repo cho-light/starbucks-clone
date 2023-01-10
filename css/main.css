@@ -13,6 +13,9 @@ img {
 a {
   text-decoration: none;
 }
+strong{
+  font-weight: bold;
+}
 .inner {
   width: 1100px;
   margin: 0 auto;
@@ -69,6 +72,15 @@ a {
   color: #fff;
   background-color: #222;
 }
+.btn.btn--white {
+  color: #fff;
+  border-color: #fff;
+}
+.btn.btn--white:hover {
+  text-decoration-line: underline;
+  background-color: transparent;
+}
+
 
 /* HEADER */
 header {
@@ -446,4 +458,63 @@ header .badges .badge {
 .notice .promotion .swiper-prev:hover,
 .notice .promotion .swiper-next:hover {
   background-color: #fff;
+}
+
+
+/* REWARDS */
+.rewards {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #1e3932;
+  display: block;
+}
+.rewards .inner {
+  height: 241px;
+  display: flex;
+}
+.rewards .inner .logo {
+  float: left;
+  width: 16.3%;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+}
+.rewards .inner .conts {
+  box-sizing: border-box;
+  float: left;
+  width: calc(83.7% - 80px);
+  padding-right: 30px;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+.rewards .inner .conts .top-conts {
+  position: relative;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #4b615b;
+}
+.rewards .inner .conts .top-conts .info {
+  line-height: 1.4;
+    margin-bottom: 12px;
+    font-size: 26px;
+    font-weight: normal;
+    display: block;
+    
+}
+.rewards .inner .conts .top-conts .info h2{
+  margin-bottom: 12px;
+}
+.rewards .inner .conts .top-conts .info p{
+  line-height: 1.4;
+  font-size: 17px;
+}
+.rewards .inner .conts .top-conts .btn-group{
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  font-size: 0;
+  display: flex;
+}
+.rewards .inner .conts .top-conts .btn-group .btn:last-child{
+  margin-left: 9px;
 }
