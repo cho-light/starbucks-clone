@@ -582,20 +582,20 @@ header .badges .badge {
   border-color: #fff;
 }
 
-
 /* BEAN */
-.main-bean{
-  background: url('https://image.istarbucks.co.kr/upload/common/img/main/2023/2023_newyear_promotion_bg.jpg') center/cover no-repeat;
+.main-bean {
+  background: url("https://image.istarbucks.co.kr/upload/common/img/main/2023/2023_newyear_promotion_bg.jpg")
+    center/cover no-repeat;
   height: 573px;
 }
 .main-bean .inner {
   height: 100%;
 }
 
-.main-bean .fade-in{
+.main-bean .fade-in {
   position: absolute;
   opacity: 0;
-  transition: 0.6s cubic-bezier(0.5, 1, 0.89, 1)
+  transition: 0.6s cubic-bezier(0.5, 1, 0.89, 1);
 }
 .main-bean .inner .bean-img-box {
   position: absolute;
@@ -608,12 +608,12 @@ header .badges .badge {
 .main-bean .inner .bean-txt-box {
   position: absolute;
   z-index: 1;
-    top: 32.8%;
-    right: -600px;
-    max-width: 339px;
-    width: 37.63%;
+  top: 32.8%;
+  right: -600px;
+  max-width: 339px;
+  width: 37.63%;
 }
-.main-bean .inner .bean-txt-box .btn{
+.main-bean .inner .bean-txt-box .btn {
   margin-top: 39px;
 }
 
@@ -621,18 +621,19 @@ header .badges .badge {
 .main-ethiopia {
   position: relative;
   height: 400px;
-  background: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/221220_pc_reserve_bg.png) no-repeat center top;
+  background: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/221220_pc_reserve_bg.png)
+    no-repeat center top;
   background-size: cover;
   overflow: hidden;
   display: block;
 }
-.main-ethiopia .inner{
+.main-ethiopia .inner {
   position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
-.main-ethiopia .inner .ethiopia-title{
+.main-ethiopia .inner .ethiopia-title {
   position: relative;
   z-index: 2;
   padding-top: 115px;
@@ -642,53 +643,90 @@ header .badges .badge {
   margin-right: auto;
   box-sizing: border-box;
 }
-.main-ethiopia .inner .ethiopia-visual{
+.main-ethiopia .inner .ethiopia-visual {
   display: block;
   position: absolute;
   bottom: 0;
-  
 }
-.main-ethiopia .inner .ethiopia-visual img{
+.main-ethiopia .inner .ethiopia-visual img {
   width: auto;
   vertical-align: top;
-  
 }
-.main-ethiopia .inner .ethiopia-visual::before{
+.main-ethiopia .inner .ethiopia-visual::before {
   content: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/221220_pc_reserve_left_bg.png);
-    position: absolute;
-    left: 50px;
-    bottom: -1%;
+  position: absolute;
+  left: 50px;
+  bottom: -1%;
 }
-.main-ethiopia .inner .ethiopia-visual::after{
+.main-ethiopia .inner .ethiopia-visual::after {
   content: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/221220_pc_resserve_right_bg.png);
-    position: absolute;
-    right: 0;
-    bottom: -1%;
+  position: absolute;
+  right: 0;
+  bottom: -1%;
 }
 .main-ethiopia .inner .ethiopia-btn {
   position: relative;
-    z-index: 2;
-    max-width: 1080px;
-    margin-top: 39px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 254px;
-    box-sizing: border-box;
+  z-index: 2;
+  max-width: 1080px;
+  margin-top: 39px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 254px;
+  box-sizing: border-box;
 }
 .main-ethiopia .inner .ethiopia-btn .btn {
   width: 125px;
   height: 38px;
-
 }
 
 /* PICK YOUR FAVORITE */
 .pick-your-favorite {
-  background: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Chrismas2_PTF_bg.png) center center fixed no-repeat #45434c;
+  background: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Chrismas2_PTF_bg.png)
+    center center fixed no-repeat #45434c;
   background-size: auto 87%;
   height: 800px;
   padding: 0;
   position: relative;
   background-position: bottom;
 }
-.pick-your-favorite .inner{}
-.pick-your-favorite .inner .text-group{}
+.pick-your-favorite .inner {
+  background-color: green;
+  height: 100%;
+}
+.pick-your-favorite .inner .text-group {
+}
+.pick-your-favorite .inner .text-group .title {
+  height: 204px;
+  overflow: hidden;
+  position: absolute;
+  top: 120px;
+  width: 258px;
+  z-index: 2;
+}
+.pick-your-favorite .inner .text-group .description {
+  height: 156px;
+  position: absolute;
+  top: 370px;
+  width: 362px;
+  z-index: 2;
+}
+.pick-your-favorite .inner .text-group .img {
+  top: 100px;
+  right: -163px;
+  width: 912px;
+  height: 575px;
+  background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2023/230105_newyear_pick_img.png);
+  position: absolute;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+.pick-your-favorite .inner .text-group .more {
+  border: 2px solid #fff;
+  border-radius: 3px;
+  left: 328px;
+  position: absolute;
+  top: 570px;
+  z-index: 7;
+}
