@@ -78,3 +78,36 @@ promotionToggleBtn.addEventListener("click", function () {
     promotionEl.classList.remove("show");
   }
 });
+
+
+
+const beanimgfadeEl= document.querySelector('.main-bean .bean-img-box')
+const beantxtfadeEl= document.querySelector('.main-bean .bean-txt-box')
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (window.scrollY > 550) {
+        gsap.to(beanimgfadeEl, 1, {
+          opacity: 1,
+          left:150
+        });
+        gsap.to(beantxtfadeEl, 1, {
+          opacity: 1,
+          right:150
+        });
+      
+    }
+    if(window.scrollY < 450){
+        gsap.to(beanimgfadeEl, 1, {
+          opacity: 0,
+          left:-600
+      });
+      gsap.to(beantxtfadeEl, 1, {
+        opacity: 0,
+        right:-600
+    });
+    }
+      
+    
+  })
+);
