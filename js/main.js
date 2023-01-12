@@ -78,3 +78,105 @@ promotionToggleBtn.addEventListener("click", function () {
     promotionEl.classList.remove("show");
   }
 });
+
+const beanimgfadeEl = document.querySelector(".main-bean .bean-img-box");
+const beantxtfadeEl = document.querySelector(".main-bean .bean-txt-box");
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (window.scrollY > 550) {
+      gsap.to(beanimgfadeEl, 1, {
+        opacity: 1,
+        left: 150,
+      });
+      gsap.to(beantxtfadeEl, 1, {
+        opacity: 1,
+        right: 150,
+      });
+    }
+    if (window.scrollY < 450) {
+      gsap.to(beanimgfadeEl, 1, {
+        opacity: 0,
+        left: -600,
+      });
+      gsap.to(beantxtfadeEl, 1, {
+        opacity: 0,
+        right: -600,
+      });
+    }
+  })
+);
+
+
+const picktitlefadeEl = document.querySelector('.pick-your-favorite .title')
+const pickdescriptionfadeEl = document.querySelector('.pick-your-favorite .description')
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (window.scrollY > 800) {
+      gsap.to(picktitlefadeEl, 2, {
+        opacity: 1,
+        left: 100,
+      });
+      gsap.to(pickdescriptionfadeEl, 2, {
+        opacity: 1,
+        left: 0,
+      });
+    } else{
+      gsap.to(picktitlefadeEl, 2, {
+        opacity: 0,
+        left: -600,
+      });
+      gsap.to(pickdescriptionfadeEl, 2, {
+        opacity: 0,
+        left: -500,
+    })}
+  })
+);
+
+const reservevisualEl = document.querySelector('.reserve-magazine .reserve-visual');
+window.addEventListener(
+  'scroll',
+  _.throttle(function(){
+    if(window.scrollY > 2000) {
+      reservevisualEl.style.opacity=1;
+    } else {
+      reservevisualEl.style.opacity=0.2;
+    }
+  })
+)
+
+const storeopacityEls = document.querySelectorAll('.find-store .opacity');
+const storefadeEls = document.querySelectorAll('.find-store .fade-in');
+window.addEventListener(
+  'scroll',
+  _.throttle(function(){
+    if(window.scrollY > 2150) {
+      storeopacityEls.forEach(function(opacityEl, index){
+        gsap.to(opacityEl, 2, {
+          opacity: 1
+        })
+      })
+      storefadeEls.forEach(function(fadeEl, index){
+        gsap.to(fadeEl, 1, {
+          delay:(index + 1) * 0.4,
+          opacity:1,
+          left:0
+        })
+      })
+    } else {
+      storeopacityEls.forEach(function(opacityEl, index){
+        gsap.to(opacityEl, 2, {
+          opacity: 0
+        })
+      })
+      storefadeEls.forEach(function(fadeEl, index){
+        gsap.to(fadeEl, 1, {
+          delay:(index + 1) * 0.4,
+          opacity:0,
+          left:200
+        })
+      })
+    }
+  })
+)
