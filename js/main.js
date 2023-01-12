@@ -114,20 +114,20 @@ window.addEventListener(
   "scroll",
   _.throttle(function () {
     if (window.scrollY > 800) {
-      gsap.to(picktitlefadeEl, 1, {
+      gsap.to(picktitlefadeEl, 2, {
         opacity: 1,
         left: 100,
       });
-      gsap.to(pickdescriptionfadeEl, 1, {
+      gsap.to(pickdescriptionfadeEl, 2, {
         opacity: 1,
         left: 0,
       });
     } else{
-      gsap.to(picktitlefadeEl, 1, {
+      gsap.to(picktitlefadeEl, 2, {
         opacity: 0,
         left: -600,
       });
-      gsap.to(pickdescriptionfadeEl, 1, {
+      gsap.to(pickdescriptionfadeEl, 2, {
         opacity: 0,
         left: -500,
     })}
@@ -142,6 +142,41 @@ window.addEventListener(
       reservevisualEl.style.opacity=1;
     } else {
       reservevisualEl.style.opacity=0.2;
+    }
+  })
+)
+
+const storeopacityEls = document.querySelectorAll('.find-store .opacity');
+const storefadeEls = document.querySelectorAll('.find-store .fade-in');
+window.addEventListener(
+  'scroll',
+  _.throttle(function(){
+    if(window.scrollY > 2150) {
+      storeopacityEls.forEach(function(opacityEl, index){
+        gsap.to(opacityEl, 2, {
+          opacity: 1
+        })
+      })
+      storefadeEls.forEach(function(fadeEl, index){
+        gsap.to(fadeEl, 1, {
+          delay:(index + 1) * 0.4,
+          opacity:1,
+          left:0
+        })
+      })
+    } else {
+      storeopacityEls.forEach(function(opacityEl, index){
+        gsap.to(opacityEl, 2, {
+          opacity: 0
+        })
+      })
+      storefadeEls.forEach(function(fadeEl, index){
+        gsap.to(fadeEl, 1, {
+          delay:(index + 1) * 0.4,
+          opacity:0,
+          left:200
+        })
+      })
     }
   })
 )
