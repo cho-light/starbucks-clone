@@ -106,3 +106,42 @@ window.addEventListener(
     }
   })
 );
+
+
+const picktitlefadeEl = document.querySelector('.pick-your-favorite .title')
+const pickdescriptionfadeEl = document.querySelector('.pick-your-favorite .description')
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (window.scrollY > 800) {
+      gsap.to(picktitlefadeEl, 1, {
+        opacity: 1,
+        left: 100,
+      });
+      gsap.to(pickdescriptionfadeEl, 1, {
+        opacity: 1,
+        left: 0,
+      });
+    } else{
+      gsap.to(picktitlefadeEl, 1, {
+        opacity: 0,
+        left: -600,
+      });
+      gsap.to(pickdescriptionfadeEl, 1, {
+        opacity: 0,
+        left: -500,
+    })}
+  })
+);
+
+const reservevisualEl = document.querySelector('.reserve-magazine .reserve-visual');
+window.addEventListener(
+  'scroll',
+  _.throttle(function(){
+    if(window.scrollY > 2000) {
+      reservevisualEl.style.opacity=1;
+    } else {
+      reservevisualEl.style.opacity=0.2;
+    }
+  })
+)

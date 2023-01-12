@@ -681,8 +681,7 @@ header .badges .badge {
 
 /* PICK YOUR FAVORITE */
 .pick-your-favorite {
-  background: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Chrismas2_PTF_bg.png)
-    center center fixed no-repeat #45434c;
+  background: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Chrismas2_PTF_bg.png) center center fixed no-repeat #45434c;
   background-size: auto 87%;
   height: 800px;
   padding: 0;
@@ -690,29 +689,24 @@ header .badges .badge {
   background-position: bottom;
 }
 .pick-your-favorite .inner {
-  background-color: green;
-  height: 100%;
+  padding: 110px 0;
 }
 .pick-your-favorite .inner .text-group {
+  width: 362px;
 }
-.pick-your-favorite .inner .text-group .title {
-  height: 204px;
-  overflow: hidden;
-  position: absolute;
-  top: 120px;
-  width: 258px;
-  z-index: 2;
+/* .pick-your-favorite .inner .text-group .title {
+  margin-bottom: 40px;
+  left: -700px;
+  opacity: 0;
 }
 .pick-your-favorite .inner .text-group .description {
-  height: 156px;
-  position: absolute;
-  top: 370px;
-  width: 362px;
-  z-index: 2;
-}
+  margin-bottom: 40px;
+  left: -600px;
+  opacity: 0;
+} */
 .pick-your-favorite .inner .text-group .img {
   top: 100px;
-  right: -163px;
+  right: -283px;
   width: 912px;
   height: 575px;
   background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2023/230105_newyear_pick_img.png);
@@ -722,11 +716,103 @@ header .badges .badge {
   background-position: center;
   z-index: 2;
 }
+.pick-your-favorite .inner .text-group .title {
+  height: 204px;
+  overflow: hidden;
+  position: absolute;
+  top: 120px;
+  width: 258px;
+  z-index: 2;
+  transition: 0.6s cubic-bezier(0.61, 1, 0.88, 1);
+}
+.pick-your-favorite .inner .text-group .description {
+  height: 156px;
+  position: absolute;
+  top: 370px;
+  width: 362px;
+  z-index: 2;
+  transition: 0.7s cubic-bezier(0.2, 1, 0.89, 1);
+
+}
 .pick-your-favorite .inner .text-group .more {
-  border: 2px solid #fff;
-  border-radius: 3px;
-  left: 328px;
+  left: 228px;
   position: absolute;
   top: 570px;
-  z-index: 7;
+  z-index: 2;
 }
+
+/* RESERVE */
+.reserve-magazine{
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+  background: url(https://image.istarbucks.co.kr/upload/common/img/main/2021/reserve_bg_pc.png) no-repeat 50% 100%;
+  background-size: auto 353px;
+}
+.reserve-magazine .inner{
+}
+.reserve-magazine .reserve-title {
+  position: relative;
+  z-index: 10;
+  padding-top: 135px;
+  padding-left: 55px;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.reserve-magazine .reserve-visual {
+  display: block;
+    position: absolute;
+    bottom: auto;
+    opacity: 0;
+    top: 0;
+    right: 50%;
+    margin-right: -483px;
+    transition: 2s;
+}
+.reserve-magazine .reserve-btn {
+  position: absolute;
+margin: 33px auto 0;
+left: 330px;
+}
+
+/* FIND THE STORE */
+.find-store {background: url(/images/store_bg.jpg);
+  background-size: 100% auto;
+  height: 400px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;}
+.find-store .inner {}
+.find-store .store-img1{background: url(https://image.istarbucks.co.kr/img/event/2022/221212_main_story_2.png);
+  height: 228px;
+  left: 390px;
+  position: absolute;
+  top: 149px;
+  width: 228px;
+  z-index: 5;
+  background-size: contain;}
+.find-store .store-img2{background: url(https://image.istarbucks.co.kr/img/event/2022/221212_main_story_1.png);
+  height: 312px;
+  left: 160px;
+  position: absolute;
+  top: 0;
+  width: 366px;
+  z-index: 4;
+  background-size: contain;}
+.find-store .store-img3{background: url(../img/main/store_exp_img03.png);
+  height: 142px;
+  left: 520px;
+  position: absolute;
+  top: -60px;
+  width: 343px;
+  z-index: 4;}
+.find-store .store-img4{background: url(../img/main/store_exp_img04.png);
+  height: 102px;
+  position: absolute;
+  right: 30px;
+  top: 298px;
+  width: 230px;
+  z-index: 4;}
+  
