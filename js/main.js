@@ -97,11 +97,11 @@ window.addEventListener(
     if (window.scrollY < 450) {
       gsap.to(beanimgfadeEl, 1, {
         opacity: 0,
-        left: -600,
+        left: -100,
       });
       gsap.to(beantxtfadeEl, 1, {
         opacity: 0,
-        right: -600,
+        right: -100,
       });
     }
   })
@@ -180,3 +180,4 @@ window.addEventListener(
     }
   })
 )
+

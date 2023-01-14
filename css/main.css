@@ -16,6 +16,15 @@ a {
 strong {
   font-weight: bold;
 }
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
 .inner {
   width: 1100px;
   margin: 0 auto;
@@ -609,9 +618,7 @@ header .badges .badge {
   position: absolute;
   z-index: 1;
   top: 32.8%;
-  right: -600px;
   max-width: 339px;
-  width: 37.63%;
 }
 .main-bean .inner .bean-txt-box .btn {
   margin-top: 39px;
@@ -694,16 +701,6 @@ header .badges .badge {
 .pick-your-favorite .inner .text-group {
   width: 362px;
 }
-/* .pick-your-favorite .inner .text-group .title {
-  margin-bottom: 40px;
-  left: -700px;
-  opacity: 0;
-}
-.pick-your-favorite .inner .text-group .description {
-  margin-bottom: 40px;
-  left: -600px;
-  opacity: 0;
-} */
 .pick-your-favorite .inner .text-group .img {
   top: 100px;
   right: -283px;
@@ -716,6 +713,24 @@ header .badges .badge {
   background-position: center;
   z-index: 2;
 }
+@media screen and (max-width:1470px) {
+  .pick-your-favorite .inner .text-group .img{
+    top: 50%;
+    right: -100px;
+    width: 720px;
+    height: 475px;
+  }
+}
+@media screen and (max-width:1100px) {
+  .pick-your-favorite .inner .text-group .img{
+    top: 50%;
+    right: 160px;
+    width: 570px;
+    height: 380px;
+  }
+}
+
+
 .pick-your-favorite .inner .text-group .title {
   height: 204px;
   overflow: hidden;
@@ -860,4 +875,57 @@ left: 330px;
 height: 34px;
 padding: 0;
 line-height: 34px;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #2C2A29;
+    padding: 32px 0 35px 0;
+  }
+  .footer-menus .inner{
+    background: url(/images/footer_logo.png) right 8px no-repeat;
+  }
+  .footer-menus{
+    font-weight: 700;
+  }
+  .footer-menus ul{
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 30px;
+    list-style: none;
+    
+  }
+  .footer-menus .footer-menu-ttl > a{
+    font-size: 16px;
+    line-height: 40px;
+    text-decoration: none;
+    cursor: default;
+  }
+  .footer-menus ul li a{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-decoration: none;
+    vertical-align: baseline;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+  }
+  .footer-awards-wrap {
+    background: #282828;
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .footer-awards-wrap .footer-awards-list {
+    display: flex;
+  }
+  .footer-awards-wrap .footer-awards-list li{
+    position:relative;
+    list-style:none;
+  }
+  .footer-awards-wrap .footer-awards-list img{
+    vertical-align: top;
+    max-width: 100%;
+    margin: 0 auto;
   }
